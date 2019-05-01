@@ -1,3 +1,11 @@
+# Packager Notes
+
+[![Build Status](https://dev.azure.com/prometheansacrifice/esy-packages/_apis/build/status/prometheansacrifice.esy-proxy-libintl-0.1?branchName=master)](https://dev.azure.com/prometheansacrifice/esy-packages/_build/latest?definitionId=22&branchName=master)
+
+Needs Windows support
+
+
+# README
 This is a trivial minimal library intended to act as a proxy for a
 dynamically loaded optional libintl. This dynamically loaded library
 would be intl.dll (the core DLL of GNU gettext-runtime) on Windows,
