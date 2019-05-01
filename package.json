@@ -1,0 +1,35 @@
+{
+  "name": "esy-proxy-libintl-0.1",
+  "version": "0.0.000",
+  "description": "proxy-libintl-0.1 packaged for esy",
+  "esy": {
+    "build": [
+      "meson setup --prefix #{self.install} #{self.target_dir}",
+      "ninja -C #{self.target_dir}"
+    ],
+    "install": [
+      "meson install -C #{self.target_dir}"
+    ],
+    "buildEnv": {
+      "PYTHONPATH": "#{meson.install / 'lib' / 'python3.7' / 'site-packages'}:$PYTHONPATH"
+    },
+    "exportedEnv": {
+      "CFLAGS": {
+        "val": "-I#{self.install / 'include'} $CFLAGS",
+        "scope": "global"
+      },
+      "LDFLAGS": {
+        "val": "-L#{self.lib '-lintl'} $LDFLAGS",
+        "scope": "global"
+      },
+      "DYLD_LIBRARY_PATH": {
+        "val": "#{self.lib} $DY_LD_LIBRARY_PATH",
+        "scope": "global"
+      }
+    }
+  },
+  "dependencies": {
+    "meson": "prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1",
+    "@esy-cross/ninja-build": "^1.8.2001"
+  }
+}

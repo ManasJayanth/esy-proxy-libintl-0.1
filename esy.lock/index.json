@@ -1,0 +1,88 @@
+{
+  "checksum": "4c849f54387b7e69ac34cc42b0ea06f5",
+  "root": "esy-proxy-libintl-0.1@link-dev:./package.json",
+  "node": {
+    "meson@github:prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1@d41d8cd9": {
+      "id":
+        "meson@github:prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1@d41d8cd9",
+      "name": "meson",
+      "version":
+        "github:prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9": {
+      "id":
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9",
+      "name": "esy-zlib",
+      "version":
+        "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9": {
+      "id":
+        "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9",
+      "name": "esy-python",
+      "version":
+        "github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "esy-proxy-libintl-0.1@link-dev:./package.json": {
+      "id": "esy-proxy-libintl-0.1@link-dev:./package.json",
+      "name": "esy-proxy-libintl-0.1",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "meson@github:prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1@d41d8cd9",
+        "@esy-cross/ninja-build@1.8.2001@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "@esy-cross/ninja-build@1.8.2001@d41d8cd9": {
+      "id": "@esy-cross/ninja-build@1.8.2001@d41d8cd9",
+      "name": "@esy-cross/ninja-build",
+      "version": "1.8.2001",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/@esy-cross/ninja-build/-/ninja-build-1.8.2001.tgz#sha1:d223b3b9e73e14ef2f241ddc522fa330f94b8602"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
