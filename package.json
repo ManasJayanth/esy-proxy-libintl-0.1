@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "meson": "prometheansacrifice/esy-meson#73d7c243b3d6bd3c655de2a09ab07fc250b37ed1",
-    "@esy-cross/ninja-build": "^1.8.2001"
+    "ninja": "esy-packages/esy-ninja#9c1ba7876d8ecdebc31117178b8cc56e441edcf3"
   }
 }
