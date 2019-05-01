@@ -19,7 +19,7 @@
         "scope": "global"
       },
       "LDFLAGS": {
-        "val": "-L#{self.lib '-lintl'} $LDFLAGS",
+        "val": "-L#{self.lib} -lintl $LDFLAGS",
         "scope": "global"
       },
       "DYLD_LIBRARY_PATH": {
